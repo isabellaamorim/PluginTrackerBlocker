@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bloqueador de Rastreadores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Bloqueador de Rastreadores</h1>
+
+  <!-- Botão para ativar/desativar bloqueio -->
+  <button id="toggleBloqueio">Ativar Bloqueio</button>
+  <p id="statusBloqueio"></p> <!-- Mensagem de status do bloqueio -->
+
+  <!-- Box para usuário adicionar domínios personalizados-->
+  <h2>Adicionar Novo Domínio</h2>
+  <input type="text" id="novoDominio" placeholder="example.com">
+  <button id="adicionarDominio">Bloquear</button>
+
+  <!-- Listas de domínios adicionados pelo usuário -->
+  <h2>Domínios Adicionados</h2>
+  <ul id="listaDominiosPersonalizados"></ul>
+
+  <!-- Relatório de Rastreadores Bloqueados -->
+  <h2>Histórico de Rastreadores Bloqueados</h2>
+  <ul id="historicoBloqueios">
+    <!-- Preenchido dinamicamente a partir do popup.js-->
+  </ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Plugin Bloqueador de Rastreadores",
+    "version": "1.0",
+    "description": "Plugin para bloquear rastreadores, por Isabella e Ana Laiz.",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "<all_urls>",
+      "storage"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
